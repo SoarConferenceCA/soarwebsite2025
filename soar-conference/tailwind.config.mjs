@@ -7,9 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "Jersey10": ['Jersey 10', 'serif'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "accent_yellow": "#F7EE2A",
+        "accent_pink": "#ED1E79", 
+        "accent_blue": "#07B0EF", 
+        "accent_purple": "#9633AC", 
+        "background_grey": "#333333",
       },
     },
   },
