@@ -19,11 +19,11 @@ export function Navbar() {
           <div className="max-w-screen-xl grid grid-cols-2 md:grid-cols-3 grid-row-2 md:grid-rows-1 items-center justify-between mx-auto p-4">
           <Link href="/" className="min-w-fit ">
               {/*<img src="soar_logo.png" className="h-16"/> */}
-              <span className="font-Jersey10 text-3xl whitespace-nowrap bg-gradient-to-r from-accent_blue to-accent_purple text-transparent bg-clip-text">SOAR Conference </span>
+              <span className="font-Jersey10 text-3xl whitespace-nowrap text-transparent transition-all grad bg-clip-text gradient-transition ">SOAR Conference </span>
 
           </Link>
           <div className="flex md:order-2 self-center place-self-center md:ms-auto md:me-0 g">
-              <button type="button" class="text-white text-2xl bg-gradient-to-r from-accent_blue to-accent_purple focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Apply Now!</button>
+              <button type="button" class="text-white text-2xl py-1  px-4 rounded-lg  grad transition-all bg-size-200 bg-pos-50 hover:bg-pos-150 ease-linear duration-300 focus:ring-accent_yellow focus:ring-opacity-65 focus:ring-4 focus:outline-none gradient-transition">Apply Now!</button>
               <button data-collapse-toggle="navbar-sticky" type="button" onClick={handleToggle} className="inline-flex items-center ms-5 me-0 p-2 my-auto w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

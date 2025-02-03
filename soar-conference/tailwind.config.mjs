@@ -17,6 +17,14 @@ export default {
         "accent_purple": "#9633AC", 
         "background_grey": "#333333",
       },
+      
+        backgroundSize: {
+            'size-200': '200% 200%',
+        },
+        backgroundPosition: {
+            'pos-0': '0% 0%',
+            'pos-100': '100% 100%',
+        },
     },
   },
   plugins: [],

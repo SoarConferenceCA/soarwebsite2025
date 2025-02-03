@@ -1,11 +1,15 @@
 import Image from "next/image";
 import {Navbar} from "@/components/navbar";
+import classNames from "classnames";
 
 export default function Home() {
   return (
   
-    <div className=" grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-jersey-sans)]">
-
+    <div className="w-full bg-black">
+      <header className={classNames(`bg-[image:url(/pac_man_bg.png)]`, "h-screen w-full bg-cover bg-opacity-40 bg-center block")}>
+        <h1 className=" mx-auto text-center text-9xl mt--4 absolute z-10 left-0 right-0 top-1/2 grad bg-clip-text text-transparent w-fit">SOARCADE</h1>
+        <div className="w-full h-full absolute bg-black opacity-65"></div>
+      </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
