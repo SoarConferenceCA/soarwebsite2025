@@ -25,6 +25,9 @@ export default {
             'pos-0': '0% 0%',
             'pos-100': '100% 100%',
         },
+        fontSize: {
+          '10xl': '10rem',
+        }
     },
   },
   plugins: [],
