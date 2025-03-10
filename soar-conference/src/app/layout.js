@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Jersey_10 } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const jersey = Jersey_10({
   weight: "400",
@@ -25,8 +26,8 @@ export default function RootLayout({ children }) {
         className={jersey.className} 
       >
       <Navbar />
-
         {children}
+      <Footer />
       </body>
     </html>
   );
