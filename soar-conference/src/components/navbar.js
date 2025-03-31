@@ -15,7 +15,7 @@ export function Navbar() {
   }
   return(
 
-    <nav className="bg-black border-2 border-accent_yellow">
+    <nav className="bg-black border-2 border-accent_yellow absolute z-50 w-full">
           <div className="max-w-screen-xl grid grid-cols-2 md:grid-cols-3 grid-row-2 md:grid-rows-1 items-center justify-between mx-auto p-4">
           <Link href="/" className="min-w-fit ">
               {/*<img src="soar_logo.png" className="h-16"/> */}
