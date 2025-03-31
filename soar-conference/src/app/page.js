@@ -4,6 +4,8 @@ import classNames from "classnames";
 import Footer from "@/components/footer";
 import Accordion from "@/components/accordion";
 import chairs from "../../public/home/soar_chair.png";
+import arcade from "../../public/icons/arcade.png"
+import motion from "motion/react"
 
 export default function Home() {
   var list = [
@@ -23,23 +25,24 @@ export default function Home() {
       question: "What if I have dietary restrictions or accessibility needs?",
       answer: "We strive to make SOAR inclusive for all students! If you have dietary restrictions or require accommodations, let the SOAR team know in advance."
     }, 
+
   ]
   return (
-    <div className="relative w-full bg-black bg-cover bg-center">
+    <div className="relative w-full bg-[image:url(/background.png)] bg-repeat bg-center" >
       <header className={classNames(`bg-[image:url(/pac_man_bg.png)]`, " relative h-screen w-full bg-cover bg-opacity-40 bg-center grid lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 grid-rows-2")}>
       <div className="w-full h-full mx-auto right-0 left-0 absolute bg-black opacity-65 top-0 z-0"></div>
         <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center">
         <h1 className="mx-auto text-center z-20 mt--4 grad bg-clip-text text-transparent w-fit place-self-center text-9xl lg:text-10xl lg:ps-10 bg-size-200 animate-moving_gradient my-auto block">SOARCADE</h1>
-
         </div>
-        
       </header>
-      <main className=" relative">
+      <main className=" relative my-10">
       <h2 className="mx-auto text-center z-20 mb-4 text-white w-fit place-self-center text-4xl lg:text-6xl">Mission Statement</h2>
 
-      <div className=" grid grid-cols-1 lg:grid-cols-2 w-3/4 mx-auto">
+      <div className=" relative grid grid-cols-1 lg:grid-cols-2 w-3/4 mx-auto">
+      <div className="relative">
       <Image src={chairs} className="relative mx-auto w-5/6 md:w-96 lg:w-5/6 rounded-lg border-accent_yellow border-2" alt="Picture of SOAR Chairs of 2024"/>
-
+      <Image src={arcade} className="absolute w-20 -rotate-6 -bottom-10 right-0" alt="Picture of SOAR Chairs of 2024"/>
+      </div>
         <p className="mt-2 text-center place-self-center text-xl lg:text-3xl text-gray-300 px-30">SOAR aims to organise a successful leadership conference for middle school students in grades 7-8 with an aim to develop, culminate and offer core leadership skills and experiences that will prepare them for an effective high school career.</p>    
       </div>
 

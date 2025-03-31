@@ -9,10 +9,7 @@
   @apply block text-2xl py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-colors ease-in-out
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 .nav-element.home{
   @apply hover:text-accent_purple hover:text-accent_purple
@@ -35,7 +32,7 @@
 .grad {
   @apply bg-gradient-to-r from-accent_yellow via-accent_pink to-accent_purple 
 }
-nav .gradient-transition {
+ .gradient-transition {
   @apply bg-size-200 bg-pos-0 hover:bg-pos-100 ease-linear duration-300
 }
 
@@ -62,4 +59,21 @@ body {
 @theme {
   --animate-gradient: gradient 10s ease-in-out infinite ;
 
+}
+
+#main_portion {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(139, 201, 228);
+  animation: body 1s linear;
+   /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+
+}
+@keyframes body {
+  to {
+    background-color: rgb(19, 48, 97);
+  }
 }
