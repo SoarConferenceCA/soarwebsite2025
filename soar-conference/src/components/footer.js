@@ -14,7 +14,7 @@ const Footer = () => {
               className="h-10"
               alt="Soar Footer Logo"
             />
-            <span className="font-Jersey10 text-2xl whitespace-nowrap text-transparent transition-all grad bg-clip-text gradient-transition ">SOAR Conference </span>
+            <span className="font-Jersey10 text-2xl whitespace-nowrap text-transparent transition-all grad bg-clip-text gradient-transition ">SOAR CONFERENCE</span>
 
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -49,6 +49,10 @@ const Footer = () => {
         </span>
       </div>
     </footer>
+
+    
+
+    
   );
 };
 

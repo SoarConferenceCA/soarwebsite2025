@@ -11,7 +11,7 @@ export default function Accordion(info) {
       {
         info.list.map((data, index) => (
           
-          <div>
+          <div key={index}>
             <button onClick={() => handleOpen(index)} type="button" class="flex items-center justify-between w-full p-5 text-xl rtl:text-right text-gray-500 border border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3 h-20" >
               <span>{data.question}</span>
               { open === index

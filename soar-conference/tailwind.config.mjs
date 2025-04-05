@@ -20,7 +20,7 @@ export default {
       },
       
         backgroundSize: {
-            'size-200': '200% 200%',
+            'size-200': '200% 100%',
         },
         backgroundPosition: {
             'pos-0': '0% 0%',
