@@ -5,8 +5,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from "@/components/card";
 import chairs from "../../../public/home/soar_chair.png";
-import arcade from "../../../public/icons/arcade.png"
+import cards from "../../../public/icons/cards.png"
 import Image from "next/image";
+import team_data from "@/app/data/team.json"
 
 export default function About(){
 
@@ -51,7 +52,7 @@ export default function About(){
       <div className="relative grid grid-cols-1 lg:grid-cols-2 w-3/4 mx-auto gap-x-4 ">
         <div className="relative w-full h-full">
           <Image src={chairs} className="relative mx-auto w-5/6 md:w-96 lg:w-5/6 rounded-lg border-accent_pink border-2" alt="Picture of SOAR Chairs of 2024"/>
-          <Image src={arcade} className="absolute w-20 -rotate-6 -bottom-10 right-0" alt="Picture of SOAR Chairs of 2024"/>
+          <Image src={cards} className="absolute w-30 -rotate-6 -bottom-10 right-0" alt="card graphic"/>
         </div>
         <div className="flex items-center justify-center w-full h-full bg-gray-900 rounded-lg mt-10 lg:mt-0 mb-10 border-accent_pink border-2">
           <p className="text-center text-xl lg:text-3xl text-gray-300 px-6">
@@ -70,19 +71,18 @@ export default function About(){
       showDots={true}
       ssr={true} // means to render carousel on server-side.
       infinite={true}
-      autoPlaySpeed={1000}
+      autoPlaySpeed={1}
       keyBoardControl={true}
       customTransition="all .5"
       transitionDuration={500}
-      containerClass="bg-gray-900 h-fit rounded-lg mx-auto w-3/4  border-accent_purple border-2"
+      renderDotsOutside={true}
+      containerClass="bg-gray-900 rounded-lg mx-auto w-3/4 border-accent_purple border-2"
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      dotListClass="custom-dot-list-style"
-      itemClass="w-full text-center overflow-x-hidden"
+      itemClass="w-full text-center overflow-x-hidden relative"
 >   
-      <Card {...sample} />
-      <div>Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div>
+      {team_data.map((data, index) => {
+             return <Card {...data} />
+            })}
       </Carousel>; 
 
     </div>

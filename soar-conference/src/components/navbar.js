@@ -23,7 +23,7 @@ export function Navbar() {
           <span className="font-Jersey10 text-3xl whitespace-nowrap text-transparent transition-all grad bg-clip-text gradient-transition">SOAR CONFERENCE</span>
         </Link>
         <div className="flex md:order-2 self-center place-self-center md:ms-auto md:me-0">
-          <button type="button" className="text-white text-2xl py-1 px-4 rounded-lg grad transition-all bg-size-200 bg-pos-50 hover:bg-pos-150 ease-linear duration-300 focus:ring-accent_yellow focus:ring-opacity-65 focus:ring-4 focus:outline-none gradient-transition">Apply Now!</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3LHNEdavyBYa6OIKLjGsKk9L_T5kmEVL6G7D1KWvUsv_WnA/viewform" target="_blank" rel="noopener noreferrer" className="text-white text-2xl py-1 px-4 rounded-lg grad transition-all bg-size-200 bg-pos-50 hover:bg-pos-150 ease-linear duration-300 focus:ring-accent_yellow focus:ring-opacity-65 focus:ring-4 focus:outline-none gradient-transition">Apply Now!</a>
           <button data-collapse-toggle="navbar-sticky" type="button" onClick={handleToggle} className="inline-flex items-center ms-5 me-0 p-2 my-auto w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

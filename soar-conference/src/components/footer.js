@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="/home" className="hover:underline me-4 md:me-6">
+              <a href="/" className="hover:underline me-4 md:me-6">
                 Home
               </a>
             </li>
@@ -34,7 +34,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3LHNEdavyBYa6OIKLjGsKk9L_T5kmEVL6G7D1KWvUsv_WnA/formResponse" target="_blank" className="hover:underline">
                 Apply
               </a>
             </li>

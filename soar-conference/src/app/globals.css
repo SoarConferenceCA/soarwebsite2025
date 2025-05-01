@@ -77,3 +77,11 @@ body {
     background-color: rgb(19, 48, 97);
   }
 }
+
+.react-multi-carousel-dot--active button {
+ @apply !bg-accent_purple 
+}
+
+.react-multi-carousel-dot button {
+  @apply !border-white
+ }

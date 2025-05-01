@@ -1,10 +1,10 @@
 export default function Card(props) {
   return(
-    <div className="grid lg:grid-cols-3 grid-cols-1 mx-auto w-fit ">
-      <img src={props.imgpath} className="max-w-96 w-full self-center lg:mx-0 mx-auto"/>
-      <div className="lg:col-span-2 lg:p-10 p-4 mx-auto">
-        <h4 className="text-center text-4xl mb-8">{props.title}</h4>
-        <p className="text-xl p-3">{props.message}</p>
+    <div className=" h-96 relative overflow-clip">
+      <img src={props.imgpath} className= "mx-auto place-self-start object-[50%_50%] object-cover w-full h-96"/>
+      <div className="p-4 mx-auto absolute bottom-0 bg-black opacity-80 w-full h-28 self-center">
+        <h4 className="text-center text-4xl">{props.title}</h4>
+        <p className="text-center text-2xl">{props.members}</p>
       </div>
     </div>
   )
