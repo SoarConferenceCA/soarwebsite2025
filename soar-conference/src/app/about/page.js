@@ -66,8 +66,8 @@ export default function About(){
       <Carousel
       responsive={responsive}
       className="overflow-x-hidden"
-      swipeable={false}
-      draggable={false}
+      swipeable={true}
+      draggable={true}
       showDots={true}
       ssr={true} // means to render carousel on server-side.
       infinite={true}
@@ -76,14 +76,14 @@ export default function About(){
       customTransition="all .5"
       transitionDuration={500}
       renderDotsOutside={true}
-      containerClass="bg-gray-900 rounded-lg mx-auto w-3/4 border-accent_purple border-2"
+      containerClass="bg-opacity-0 rounded-lg mx-auto w-3/4 border-accent_purple border-2"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass="w-full text-center overflow-x-hidden relative"
 >   
       {team_data.map((data, index) => {
-             return <Card {...data} />
+             return <Card {...data} key={index} />
             })}
-      </Carousel>; 
+      </Carousel>
 
     </div>
   )

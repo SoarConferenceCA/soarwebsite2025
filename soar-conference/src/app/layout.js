@@ -3,6 +3,7 @@ import { Jersey_10 } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import classNames from "classnames";
 
 const jersey = Jersey_10({
   weight: "400",
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={jersey.className} 
+        className={classNames(jersey.className, 'overflow-x-hidden')} 
       >
       <Navbar />
         {children}
